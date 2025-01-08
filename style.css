@@ -31,15 +31,98 @@ select {
     font: inherit;
 }
 
-p {
-    text-wrap: pretty;
+html,
+body {
+    height: 100%;
 }
 
 body {
+    background: #ecf2f8;
     font-size: 0.8125rem;
 }
 
+main {
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.card {
+    max-width: 20.4375rem;
+    box-shadow: 0 2.5rem 2.5rem -0.625rem rgba(201, 213, 225, 0.5);
+}
+
+.hero__image {
+    max-height: 200px;
+    width: 100%;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+}
+
+.content {
+    background: #ffffff;
+    padding: 2.25rem 2rem 1.25rem;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+}
+
+.content__header {
+    color: #48556a;
+    font: bold 1rem/ 1.5 "Manrope";
+    letter-spacing: 0.0125rem;
+    margin-bottom: 0.75rem;
+}
+
+.content__description {
+    color: #6e8098;
+    font: 500 0.8125rem/1.5 "Manrope";
+    letter-spacing: 0.0075rem;
+}
+
+.profile {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author {
+    display: flex;
+    gap: 1rem;
+}
+
+.author__image {
+    border-radius: 100%;
+}
+
+.info__name {
+    color: #48556a;
+    font: bold 0.8125rem/1.5 "Manrope";
+    letter-spacing: 0.0075rem;
+}
+
+.info__date {
+    color: #9daec2;
+    font-weight: 500;
+    font-family: "Manrope";
+    letter-spacing: 0.0075rem;
+    line-height: 1.5;
+}
+
+.share__button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    border: none;
+    background: #ecf2f8;
+}
+
+.share__image {
+    margin: 0 auto;
+    color: #6e8098;
+}
 
 footer {
     position: fixed;
@@ -52,6 +135,40 @@ footer {
     font-size: 11px;
     text-align: center;
 }
+
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 57.5rem) {
+    .card {
+        max-width: 45.625rem;
+        display: grid;
+        grid-template-columns: 17.8125rem 1fr;
+    }
+
+    .hero__image {
+        max-height: none;
+        height: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0.625rem;
+        border-bottom-left-radius: 0.625rem;
+    }
+
+    .content {
+        padding: 2.5rem 2rem;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0.625rem;
+        border-bottom-right-radius: 0.625rem;
+    }
+
+    .content__header {
+        font-size: 1.25rem;
+        line-height: 1.4;
+        letter-spacing: 0.015625rem;
+    }
+
+    .profile {
+        margin-top: 1.25rem;
+    }
 }
