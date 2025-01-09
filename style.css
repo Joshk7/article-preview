@@ -62,10 +62,15 @@ main {
 }
 
 .content {
+    position: relative;
     background: #ffffff;
     padding: 2.25rem 2rem 1.25rem;
     border-bottom-left-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
+}
+
+.inner-wrapper {
+    max-width: 365px;
 }
 
 .content__header {
@@ -111,17 +116,115 @@ main {
     line-height: 1.5;
 }
 
+.share__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    padding: 0;
+}
+
+.popup {
+    position: absolute;
+    top: -5rem;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup__content {
+    display: flex;
+    column-gap: 1.25rem;
+    padding: 1rem 2.25rem;
+    background: #48556a;
+    border-radius: 0.625rem;
+}
+
+.popup__triangle {
+    height: 0;
+    width: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #48556a;
+}
+
+.popup__icon {
+    max-width: none;
+}
+
 .share__button {
     width: 2rem;
     height: 2rem;
     border-radius: 100%;
     border: none;
     background: #ecf2f8;
+    z-index: 2;
 }
 
-.share__image {
+.upshift {
+    position: absolute;
+    display: flex;
+    visibility: hidden;
+    justify-content: space-between;
+    align-items: center;
+    background: #48556a;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+}
+
+.upshift__content {
+    display: flex;
+    column-gap: 1.25rem;
+    padding: 0.375rem;
+}
+
+.share__span {
+    font: 500 1em/1.5 "Manrope";
+    color: #9daec2;
+    text-transform: uppercase;
+    letter-spacing: 0.3125rem;
+}
+
+.icon__list {
+    padding: 0;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.icon__list--item {
+    padding: 0;
+    list-style: none;
+}
+
+.share__icon {
     margin: 0 auto;
-    color: #6e8098;
+    color: #6E8098;
+}
+
+.share__button:hover {
+    background-color: #6E8098;
+}
+
+.share__button:hover path {
+    fill: white;
+}
+
+.active__button {
+    background: #6E8098;
+}
+
+.active__icon {
+    fill: white;
+}
+
+.animate-from-bottom {
+    animation: fadeInFromBottom 0.2s ease-in-out;
 }
 
 footer {
@@ -170,5 +273,19 @@ footer {
 
     .profile {
         margin-top: 1.25rem;
+    }
+}
+
+@keyframes fadeInFromBottom {
+    0% {
+        opacity: 0;
+
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform: translateY(0%);
     }
 }
