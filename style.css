@@ -129,7 +129,6 @@ main {
     position: absolute;
     top: -5rem;
     display: flex;
-    display: none;
     flex-direction: column;
     align-items: center;
 }
@@ -166,7 +165,6 @@ main {
 .upshift {
     position: absolute;
     display: flex;
-    visibility: hidden;
     justify-content: space-between;
     align-items: center;
     background: #48556a;
@@ -221,6 +219,10 @@ main {
 
 .active__icon {
     fill: white;
+}
+
+.visibility {
+    display: none;
 }
 
 .animate-from-bottom {
