@@ -156,6 +156,9 @@ main {
     border: none;
     background: #ecf2f8;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .upshift {
@@ -197,7 +200,6 @@ main {
 }
 
 .share__icon {
-    margin: 0 auto;
     color: #6E8098;
     width: 0.9375rem;
     height: 0.8125rem;
