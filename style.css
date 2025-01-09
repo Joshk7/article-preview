@@ -150,8 +150,7 @@ main {
 }
 
 .share__button {
-    /* width: 2rem;
-    height: 2rem; */
+    padding: 0.59375rem 0.53125rem;
     border-radius: 100%;
     border: none;
     background: #ecf2f8;
