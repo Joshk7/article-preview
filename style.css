@@ -150,16 +150,11 @@ main {
 }
 
 .share__button {
-    width: 2rem;
-    height: 2rem;
-    /* padding: 0.59375rem 0.53125rem; */
+    padding: 0.59375rem 0.53125rem;
     border-radius: 100%;
     border: none;
     background: #ecf2f8;
     z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .upshift {
@@ -205,6 +200,7 @@ main {
     width: 0.9375rem;
     height: 0.8125rem;
     max-width: none;
+    margin: 0 auto;
 }
 
 .share__button:hover {
