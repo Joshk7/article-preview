@@ -203,6 +203,7 @@ main {
     color: #6E8098;
     width: 0.9375rem;
     height: 0.8125rem;
+    max-width: none;
 }
 
 .share__button:hover {
