@@ -3,7 +3,7 @@ const shareIcon = document.getElementById("share-icon");
 const popup = document.getElementById("popup");
 const upshift = document.getElementById("upshift");
 
-const mediaQuery = window.matchMedia("(min-width: 57.5rem)");
+const mediaQuery = window.matchMedia("(min-width: 55rem)");
 
 shareButton.addEventListener("click", () => {
     shareButton.classList.toggle("active__button");
