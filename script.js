@@ -1,4 +1,4 @@
-const shareButton = document.getElementById("share-button");
+const shareButton = document.getElementById("share");
 const shareIcon = document.getElementById("share-icon");
 const popup = document.getElementById("popup");
 const upshift = document.getElementById("upshift");
